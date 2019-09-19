@@ -1,0 +1,15 @@
+### obtener informacion de prueba con un cliente rest
+GET http://localhost:8080
+
+### obtener informacion de prueba en mongo
+GET http://localhost:8080/post/1
+
+### guardar informacion de prueba en mongo
+POST http://localhost:8080/post
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}

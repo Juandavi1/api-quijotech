@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api-quijotech
+
+spring:
+  application:
+    name: api-quijotech
+  data:
+    mongodb:
+      database: testdb
+      port: 27017
+      host: localhost
+
+client:
+  post: https://jsonplaceholder.typicode.com

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%highlight{%d} [%.7thread] %highlight{${level:-%5p}}{FATAL=red blink, ERROR=bg_red, WARN=yellow bold, INFO=green, DEBUG=green bold, TRACE=blue} %style{%logger{36}}{cyan} %style{%notEmpty{[%X{name} %X{lastname}]}}{blue} %style{%X{type}}{magenta} %style{~>}{magenta} %style{%msg%n%throwable}{black} "/>
+        </Console>
+
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="ConsoleAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
